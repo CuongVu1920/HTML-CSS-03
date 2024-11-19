@@ -137,6 +137,7 @@ a {
 
 .logo__brand {
     display: block;
+    font-family: "Sora", sans-serif;
     font-size: 1.8em;
     font-weight: 400;
     color: #ffff;
@@ -664,4 +665,172 @@ a {
     font-size: 1.4rem;
     font-weight: 500;
     line-height: 1.4;
+}
+
+/* Appointment */
+
+.appointment {
+    margin: 85px 0 170px;
+}
+
+.appoiment__inner {
+    text-align: center;
+    padding: 100px 70px;
+    background: #F6FBFF;
+}
+
+.appoiment__heading {
+    position: relative;
+    padding-bottom: 18px;
+}
+
+.appoiment__heading::after {
+    position: absolute;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    margin: 0 auto;
+    display: inline-block;
+    content: "";
+    width: 136px;
+    height: 2px;
+    background: #2E80CE;
+}
+
+.appoiment__desc {
+    margin: 18px auto 38px;
+    max-width: 617px;
+    font-size: 1.6rem;
+}
+
+/* Footer */
+
+.footer {
+    padding-top: 100px;
+    background: #10375C;
+    font-family: "Sora", sans-serif;
+}
+
+.footer__row {
+    display: grid;
+    grid-template-columns: 1fr 0.4fr 0.4fr 1fr;
+    column-gap: 78px;
+}
+
+.footer__desc {
+    margin-top: 21px;
+    color: #A9B3BB;
+    font-size: 1.6rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height:  175%;
+}
+
+.footer__heading {
+    margin-bottom: 20px;
+    color: #FFF;
+    font-size: 1.6rem;
+    font-weight: 600;
+    line-height: 175%;
+}
+
+.footer__list {
+    margin-bottom: 28px;
+}
+
+.footer__link {
+    color: #A9B3BB;
+    font-size: 1.4rem;
+    font-weight: 400;
+    line-height: 185.714%;
+    white-space: nowrap;
+}
+
+/* white-space: nowrap;
+
+    Ngăn văn bản trong bảng hoặc nút bị xuống dòng.
+    Dùng trong thanh điều hướng hoặc các thành phần cần bố cục một dòng cố định.
+
+    dụng để ngăn các nội dung trong phần tử HTML xuống dòng. Khi áp dụng, 
+    tất cả nội dung sẽ hiển thị trên một dòng duy nhất, 
+    ngay cả khi nội dung vượt quá chiều rộng của phần tử.
+
+    - Nếu không gian không đủ, phần tử sẽ hiển thị dấu ... (khi dùng text-overflow: ellipsis).
+     */
+
+.footer__link:hover {
+    color: #fff;
+    text-decoration: underline;
+}
+
+.footer__item {
+    margin-bottom: 10px;
+}
+
+.footer__social {
+    display: flex;
+    align-items: center;
+    column-gap: 10px;
+}
+
+.footer__social-btn {
+    margin-bottom: 28px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    color: #2E80CE;
+    background: #fff;
+    transition: 0.25s;
+}
+
+.footer__social-btn:hover {
+    background: #2E80CE;
+    color: #ffff;
+}
+
+.footer-form {
+    margin-top: 10px;
+    display: flex;
+    align-items: center;
+    column-gap: 12px;
+}
+
+.footer-form__input {
+    width: 211px;
+    height: 46px;
+    outline: none;
+    border-radius: 4px;
+    background: transparent;
+    border: 1px solid #406181;
+    color: #9CA8B1;
+    font-size: 1.4rem;
+    font-weight: 400;
+    line-height: 185.714% ;
+    padding: 10px;
+}
+
+.footer-form__sumbit {
+    --height: 46px;
+
+    min-width: 108px;
+    border-radius: 4px;
+    font-family: "Open Sans";
+    font-size: 1.4rem;
+}
+
+.footer__copyright {
+    padding: 28px 0 42px;
+    border-top: 1px solid #406181;
+}
+
+.footer__copyright-text {
+    color: #AAB3BA;
+    text-align: center;
+    font-family: "Open Sans";
+    font-size: 1.4rem;
+    font-weight: 400;
+    line-height: 185.714%; 
 }
